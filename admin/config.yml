@@ -13,5 +13,23 @@ collections:
       name: "Upload files"
       file: "cdn.json"
       fields:
-        - { label: "Title", name: "title", widget: "string"}
+        - label: "Title"
+          name: "title"
+          widget: "string"
+          
+        - label: "file upload"
+          name: "uploadfile"
+          widget: "file"
+          media_library:
+            config:
+              multiple: true
+
+        - label: "image upload"
+          name: "imaeg file"
+          widget: "image"
+          choose_url: true
+          media_library:
+            config:
+              multiple: true
+
   
